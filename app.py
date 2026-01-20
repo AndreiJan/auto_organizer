@@ -34,11 +34,12 @@ for item in dir_path.iterdir():
     #Appends items if they are classified as a document file. 
     elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers")):
         print(f"Appending item to Documents: {item}")
-        pictures.append(item)
-        
+        documents.append(item)
+    
+    #Appends items to Source Code if they are categorized as a "Source Code" file
     elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
         print(f"This is a common image format. file: {item}")
-        pictures.append(item)
+        source_code.append(item)
 
     elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
         print(f"This is a common image format. file: {item}")
