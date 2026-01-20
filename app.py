@@ -5,13 +5,13 @@ dir_path = Path("C:/Users/Andrei/Downloads")
 
 # print("Files and directories in the current directory:")
 
-
 images = []
 installers = []
 zips = []
 documents = []
 source_code = []
 misc = []
+folders = [images, installers, zips, documents, source_code, misc]
 
 
 
@@ -48,5 +48,21 @@ for item in dir_path.iterdir():
 
 
 
+
+
+
+# Create a dictionary to map names to your lists
+folders_dict = {
+    "Images": images,
+    "Installers": installers,
+    "Zips": zips,
+    "Documents": documents,
+    "Source Code": source_code,
+    "Misc": misc
+}
+
+print("\nResults:")
+# One-liner to print names and their lengths
+[print(f"{name}: {len(content)} files") for name, content in folders_dict.items()]
 
     
