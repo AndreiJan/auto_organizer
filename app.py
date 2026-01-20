@@ -6,7 +6,7 @@ dir_path = Path("C:/Users/Andrei/Downloads")
 # print("Files and directories in the current directory:")
 
 
-pictures = []
+images = []
 installers = []
 zips = []
 documents = []
@@ -19,24 +19,21 @@ for item in dir_path.iterdir():
     # Appends item to the Pictures 
     root, extension = os.path.splitext(item)
     if extension.lower().endswith(("jpg", "jpeg", "png", "gif", "webp", "tiff", "tif","svg", "bmp", "ico", "heic", "avif", "raw")):
-        print(f"This is a common image format. file: {item}\nAppending item to pictures array\n{len(pictures)}")
-        pictures.append(item)
+        print(f"Appending item to IMAGES")
+        images.append(item)
 
     #Appends item to installers - organizes and places in the installers directory 
     elif extension.lower().endswith((    "exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
-        print(f"This is a common installer files. file: {item}")
+        print(f"Appending item to INSTALLERS: {item}")
         installers.append(item)
 
-    #        
-    elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
-        print(f"This is a common image format. file: {item}")
-        pictures.append(item)
-
-
-
-
-    elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
-        print(f"This is a common image format. file: {item}")
+    #Appends items to the ZIPS array - organizes and places it if it is a ZIP file. Luckily the name isn't too huge
+    elif extension.lower().endswith(('.zip')):
+        print(f"Appending item to ZIPS: {item}")
+        zips.append(item)
+    #Appends items if they are classified as a document file. 
+    elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers")):
+        print(f"Appending item to Documents: {item}")
         pictures.append(item)
         
     elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
