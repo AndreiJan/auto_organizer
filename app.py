@@ -22,13 +22,18 @@ for item in dir_path.iterdir():
         print(f"This is a common image format. file: {item}\nAppending item to pictures array\n{len(pictures)}")
         pictures.append(item)
 
+    #Appends item to installers - organizes and places in the installers directory 
+    elif extension.lower().endswith((    "exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
+        print(f"This is a common installer files. file: {item}")
+        installers.append(item)
+
+    #        
     elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
         print(f"This is a common image format. file: {item}")
         pictures.append(item)
-        
-    elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
-        print(f"This is a common image format. file: {item}")
-        pictures.append(item)
+
+
+
 
     elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
         print(f"This is a common image format. file: {item}")
