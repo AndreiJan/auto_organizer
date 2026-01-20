@@ -37,7 +37,7 @@ for item in dir_path.iterdir():
         documents.append(item)
     
     #Appends items to Source Code if they are categorized as a "Source Code" file
-    elif extension.lower().endswith(('.png', '.jpg', '.jpeg')):
+    elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json")):
         print(f"This is a common image format. file: {item}")
         source_code.append(item)
 
