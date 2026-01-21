@@ -82,6 +82,8 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import yaml
 import logging.config
+import shutil
+
 # Adding Logging event to properly capture the shit that is happening inside the system. 
 with open("config/app_log_conf.yml", "r") as f:
     LOG_CONFIG = yaml.safe_load(f.read())
@@ -92,6 +94,14 @@ logger = logging.getLogger('basicLogger')
 with open("app_conf.yml", "r") as f:
     config = yaml.safe_load(f)
 
+
+# Ensures all folders/paths are created and set
+for folder_path in config['paths'].values():
+    # exist_ok=True performs the "if not exists" check automatically
+    os.makedirs(folder_path, exist_ok=True)
+    # print(f"Ensured directory exists: {folder_path}")
+    logger.info("All Folders created")
+
 ARCH_DIR = config['paths']['archives']
 DOCT_DIR = config['paths']['documents']
 INST_DIR = config['paths']['installers']
@@ -100,9 +110,6 @@ MISC_DIR = config['paths']['misc']
 PICT_DIR = config['paths']['pictures']
 SRCD_DIR = config['paths']['source_code']
 VIDE_DIR = config['paths']['videos']
-
-
-
 
 # Generally only needs to create the item when needs to be done
 class NewFileHandler(FileSystemEventHandler):
@@ -165,4 +172,3 @@ except KeyboardInterrupt:
     observer.stop()
     print("Stopped.")
 observer.join()
-
