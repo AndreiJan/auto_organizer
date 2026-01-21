@@ -1,0 +1,9 @@
+paths: 
+  archives: /archives
+  documents: /documents
+  installers: /installers
+  music: /music
+  misc: /misc
+  pictures: /pictures
+  source_code: /source_code
+  videos: /videos
