@@ -88,6 +88,22 @@ with open("config/app_log_conf.yml", "r") as f:
 logging.config.dictConfig(LOG_CONFIG)
 logger = logging.getLogger('basicLogger')
 
+
+with open("app_conf.yml", "r") as f:
+    config = yaml.safe_load(f)
+
+ARCH_DIR = config['paths']['archives']
+DOCT_DIR = config['paths']['documents']
+INST_DIR = config['paths']['installers']
+MUSI_DIR = config['paths']['music']
+MISC_DIR = config['paths']['misc']
+PICT_DIR = config['paths']['pictures']
+SRCD_DIR = config['paths']['source_code']
+VIDE_DIR = config['paths']['videos']
+
+
+
+
 # Generally only needs to create the item when needs to be done
 class NewFileHandler(FileSystemEventHandler):
     # This function runs whenever a file or folder is created
