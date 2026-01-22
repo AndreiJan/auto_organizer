@@ -101,7 +101,7 @@ for folder_path in config['paths'].values():
     os.makedirs(folder_path, exist_ok=True)
     # print(f"Ensured directory exists: {folder_path}")
     logger.info("All Folders created")
-
+# Sets all the folders and all 
 ARCH_DIR = config['paths']['archives']
 DOCT_DIR = config['paths']['documents']
 INST_DIR = config['paths']['installers']
@@ -110,6 +110,12 @@ MISC_DIR = config['paths']['misc']
 PICT_DIR = config['paths']['pictures']
 SRCD_DIR = config['paths']['source_code']
 VIDE_DIR = config['paths']['videos']
+ZIPS_DIR = config['paths']['zips']
+
+
+
+
+
 
 # Generally only needs to create the item when needs to be done
 class NewFileHandler(FileSystemEventHandler):
@@ -123,33 +129,42 @@ class NewFileHandler(FileSystemEventHandler):
             print(extension)
             if extension.lower().endswith(("jpg", "jpeg", "png", "gif", "webp", "tiff", "tif","svg", "bmp", "ico", "heic", "avif", "raw")):
                 # print(f"Appending item to IMAGES")
+                # images.append(event.src_path)
+                shutil.move(event.src_path, PICT_DIR)
                 logger.info(f"{event.src_path} moved to IMAGES")
-                images.append(event.src_path)
 
             #Appends item to installers - organizes and places in the installers directory 
             elif extension.lower().endswith(("exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
                 # print(f"Appending item to INSTALLERS: {event.src_path}")
+                # installers.append(event.src_path)
+                shutil.move(event.src_path, INST_DIR)
                 logger.info(f"{event.src_path} moved to INSTALLERS")
-                installers.append(event.src_path)
 
             #Appends items to the ZIPS array - organizes and places it if it is a ZIP file. Luckily the name isn't too huge
             elif extension.lower().endswith(('.zip')):
                 # print(f"Appending item to ZIPS: {event.src_path}")
+                # zips.append(event.src_path)
+                shutil.move(event.src_path, ZIPS_DIR)
                 logger.info(f"{event.src_path} moved to ZIPS")
-                zips.append(event.src_path)
+                
             #Appends items if they are classified as a document file. 
             elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers")):
                 # print(f"Appending item to Documents: {event.src_path}")
+                # documents.append(event.src_path)
+                shutil.move(event.src_path, DOCT_DIR)
                 logger.info(f"{event.src_path} moved to DOCUMENTS")
-                documents.append(event.src_path)
+
             
             #Appends items to Source Code if they are categorized as a "Source Code" file
             elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json")):
                 # print(f"Appending item to source_code: {event.src_path}")
+                # documents.append(event.src_path)
+                shutil.move(event.src_path, SRCD_DIR)
                 logger.info(f"{event.src_path} moved to SOURCE CODE")
-                source_code.append(event.src_path)
 
-            elif extension.loer().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv'))
+
+            elif extension.loer().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv')):
+                shutil.move(event.src_path, VIDE_DIR)                
                 logger.info(f"{event.src_path} moved to VIDEOS")
             else:
                 # print(f"This is a common image format. file: {item}")
@@ -157,7 +172,7 @@ class NewFileHandler(FileSystemEventHandler):
 
 
 # --- Setup and Start ---
-path_to_watch = "C:/Users/Andrei/Downloads"
+path_to_watch = "F:/programming/auto_organizer/test"
 handler = NewFileHandler()
 observer = Observer()
 
