@@ -1,81 +1,3 @@
-# import os
-# from pathlib import Path 
-
-
-# """
-# TO DO's 
-# - Program must scan FILES ONLY in 
-
-# """
-
-
-# dir_path = Path("C:/Users/Andrei/Downloads")
-
-# # print("Files and directories in the current directory:")
-
-
-# # Replace with PATHS - Probably after the testing has been confirmed and completed. 
-# images = []
-# installers = []
-# zips = []
-# documents = []
-# source_code = []
-# misc = []
-# folders = [images, installers, zips, documents, source_code, misc]
-
-
-# # Idea - Could potentially require a CLASS for it. Although I am not too sure if that's even needed. 
-# # Probably when the idea gets bigger then we can consider it "important"
-# for item in dir_path.iterdir():
-    # Appends item to the Pictures 
-    # root, extension = os.path.splitext(item)
-    # if extension.lower().endswith(("jpg", "jpeg", "png", "gif", "webp", "tiff", "tif","svg", "bmp", "ico", "heic", "avif", "raw")):
-    #     print(f"Appending item to IMAGES")
-    #     images.append(item)
-
-    # #Appends item to installers - organizes and places in the installers directory 
-    # elif extension.lower().endswith((    "exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
-    #     print(f"Appending item to INSTALLERS: {item}")
-    #     installers.append(item)
-
-    # #Appends items to the ZIPS array - organizes and places it if it is a ZIP file. Luckily the name isn't too huge
-    # elif extension.lower().endswith(('.zip')):
-    #     print(f"Appending item to ZIPS: {item}")
-    #     zips.append(item)
-    # #Appends items if they are classified as a document file. 
-    # elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers")):
-    #     print(f"Appending item to Documents: {item}")
-    #     documents.append(item)
-    
-    # #Appends items to Source Code if they are categorized as a "Source Code" file
-    # elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json")):
-    #     print(f"Appending item to source_code: {item}")
-    #     source_code.append(item)
-
-    # else:
-    #     # print(f"This is a common image format. file: {item}")
-    #     misc.append(item)
-
-
-
-
-
-
-
-# # Create a dictionary to map names to your lists
-# folders_dict = {
-#     "Images": images,
-#     "Installers": installers,
-#     "Zips": zips,
-#     "Documents": documents,
-#     "Source Code": source_code,
-#     "Misc": misc
-# }
-
-# print("\nResults:")
-# # One-liner to print names and their lengths
-# [print(f"{name}: {len(content)} files") for name, content in folders_dict.items()]
-
 import time
 import os 
 from watchdog.observers import Observer
@@ -95,13 +17,6 @@ with open("app_conf.yml", "r") as f:
     config = yaml.safe_load(f)
 
 
-# Ensures all folders/paths are created and set
-for folder_path in config['paths'].values():
-    # exist_ok=True performs the "if not exists" check automatically
-    os.makedirs(folder_path, exist_ok=True)
-    # print(f"Ensured directory exists: {folder_path}")
-    logger.info("All Folders created")
-# Sets all the folders and all 
 ARCH_DIR = config['paths']['archives']
 DOCT_DIR = config['paths']['documents']
 INST_DIR = config['paths']['installers']
@@ -111,13 +26,42 @@ PICT_DIR = config['paths']['pictures']
 SRCD_DIR = config['paths']['source_code']
 VIDE_DIR = config['paths']['videos']
 ZIPS_DIR = config['paths']['zips']
+# Ensures all folders/paths are created and set
+# path_to_watch = "F:/programming/auto_organizer/test"
 
 
+# for folder_path in config['paths'].values():
+#     os.makedirs(folder_path, exist_ok=True)
+#     print(f"Ensured directory exists: {folder_path}")
+
+# logger.info("All Folders created/verified")
 
 
+path_to_watch = "F:/programming/auto_organizer/test"
 
+# We create a dictionary to hold the dynamic paths
+organized_paths = {}
 
+for key, folder_name in config['paths'].items():
+    # This creates the path INSIDE your test folder automatically
+    # It takes the folder name (e.g., 'pictures') and joins it to 'test'
+    full_path = os.path.join(path_to_watch, os.path.basename(folder_name))
+    
+    os.makedirs(full_path, exist_ok=True)
+    organized_paths[key] = full_path
+    print(f"Ready: {full_path}")
+
+# Now re-assign your variables using the dynamic dictionary
+PICT_DIR = organized_paths['pictures']
+INST_DIR = organized_paths['installers']
+ZIPS_DIR = organized_paths['zips']
+DOCT_DIR = organized_paths['documents']
+SRCD_DIR = organized_paths['source_code']
+VIDE_DIR = organized_paths['videos']
+MISC_DIR = organized_paths['misc']
+# Sets all the folders and all 
 # Generally only needs to create the item when needs to be done
+
 class NewFileHandler(FileSystemEventHandler):
     # This function runs whenever a file or folder is created
     def on_created(self, event):
@@ -163,16 +107,19 @@ class NewFileHandler(FileSystemEventHandler):
                 logger.info(f"{event.src_path} moved to SOURCE CODE")
 
 
-            elif extension.loer().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv')):
+            elif extension.lower().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv')):
                 shutil.move(event.src_path, VIDE_DIR)                
                 logger.info(f"{event.src_path} moved to VIDEOS")
             else:
                 # print(f"This is a common image format. file: {item}")
-                misc.append(event.src_path)
+                # misc.append(event.src_path)
+                shutil.move(event.src_path, MISC_DIR)
+                logger.info(f"{event.src_path} moved to MISC")
+                
+
 
 
 # --- Setup and Start ---
-path_to_watch = "F:/programming/auto_organizer/test"
 handler = NewFileHandler()
 observer = Observer()
 
