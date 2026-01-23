@@ -37,7 +37,9 @@ ZIPS_DIR = config['paths']['zips']
 # logger.info("All Folders created/verified")
 
 
-path_to_watch = "F:/programming/auto_organizer/test"
+# path_to_watch = "F:/programming/auto_organizer/test"
+user_profile = os.getenv('USERPROFILE')
+path_to_watch = os.path.join(user_profile, 'Downloads')
 
 # We create a dictionary to hold the dynamic paths
 organized_paths = {}
