@@ -6,12 +6,10 @@ import yaml
 import logging.config
 import shutil
 
-# Adding Logging event to properly capture the shit that is happening inside the system. 
 with open("config/app_log_conf.yml", "r") as f:
     LOG_CONFIG = yaml.safe_load(f.read())
 logging.config.dictConfig(LOG_CONFIG)
 logger = logging.getLogger('basicLogger')
-
 
 with open("app_conf.yml", "r") as f:
     config = yaml.safe_load(f)
@@ -26,49 +24,24 @@ PICT_DIR = config['paths']['pictures']
 SRCD_DIR = config['paths']['source_code']
 VIDE_DIR = config['paths']['videos']
 ZIPS_DIR = config['paths']['zips']
-# Ensures all folders/paths are created and set
-# path_to_watch = "F:/programming/auto_organizer/test"
 
-
-# for folder_path in config['paths'].values():
-#     os.makedirs(folder_path, exist_ok=True)
-#     print(f"Ensured directory exists: {folder_path}")
-
-# logger.info("All Folders created/verified")
-
-
-# path_to_watch = "F:/programming/auto_organizer/test"
 user_profile = os.getenv('USERPROFILE')
 path_to_watch = os.path.join(user_profile, 'Downloads')
 
-# We create a dictionary to hold the dynamic paths
 organized_paths = {}
 
 for key, folder_name in config['paths'].items():
-    # This creates the path INSIDE your test folder automatically
-    # It takes the folder name (e.g., 'pictures') and joins it to 'test'
     full_path = os.path.join(path_to_watch, os.path.basename(folder_name))
     
     os.makedirs(full_path, exist_ok=True)
     organized_paths[key] = full_path
     print(f"Ready: {full_path}")
 
-# Now re-assign your variables using the dynamic dictionary
-PICT_DIR = organized_paths['pictures']
-INST_DIR = organized_paths['installers']
-ZIPS_DIR = organized_paths['zips']
-DOCT_DIR = organized_paths['documents']
-SRCD_DIR = organized_paths['source_code']
-VIDE_DIR = organized_paths['videos']
-MISC_DIR = organized_paths['misc']
-# Sets all the folders and all 
-# Generally only needs to create the item when needs to be done
-
 class NewFileHandler(FileSystemEventHandler):
     # This function runs whenever a file or folder is created
     def on_created(self, event):
         if not event.is_directory:
-            # print(f"BINGO! New file detected: {event.src_path}") #DEBUGGER - 
+            # print(f"BINGO! New file detected: {event.src_path}") 
             logger.info(f"New file Detected: {event.src_path}")
             # Just like the thing, we need to break the file apart
             root, extension = os.path.splitext(event.src_path)
@@ -94,7 +67,7 @@ class NewFileHandler(FileSystemEventHandler):
                 logger.info(f"{event.src_path} moved to ZIPS")
                 
             #Appends items if they are classified as a document file. 
-            elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers")):
+            elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers","twb")):
                 # print(f"Appending item to Documents: {event.src_path}")
                 # documents.append(event.src_path)
                 shutil.move(event.src_path, DOCT_DIR)
@@ -102,7 +75,7 @@ class NewFileHandler(FileSystemEventHandler):
 
             
             #Appends items to Source Code if they are categorized as a "Source Code" file
-            elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json")):
+            elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json","pem", "pub")):
                 # print(f"Appending item to source_code: {event.src_path}")
                 # documents.append(event.src_path)
                 shutil.move(event.src_path, SRCD_DIR)
@@ -121,8 +94,25 @@ class NewFileHandler(FileSystemEventHandler):
 
 
 
-# --- Setup and Start ---
+def initial_sweep(watch_path, handler_instance):
+    print("Performing initial sweep of the folder...")
+    # List everything in the directory
+    for filename in os.listdir(watch_path):
+        file_path = os.path.join(watch_path, filename)
+        
+        # We only want to move files, and we must ignore the organized folders
+        if os.path.isfile(file_path):
+            # We manually trigger the on_created logic
+            # We create a fake "event" object that watchdog expects
+            class MockEvent:
+                def __init__(self, src_path):
+                    self.src_path = src_path
+                    self.is_directory = False
+            
+            handler_instance.on_created(MockEvent(file_path))
+    print("Sweep complete. Starting live monitoring...")
 handler = NewFileHandler()
+initial_sweep(path_to_watch, handler)
 observer = Observer()
 
 observer.schedule(handler, path_to_watch, recursive=False)

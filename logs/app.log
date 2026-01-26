@@ -61,3 +61,365 @@
 2026-01-21 22:47:46,285 - basicLogger - INFO - New file Detected: F:/programming/auto_organizer/test\pictures
 2026-01-21 22:53:29,838 - basicLogger - INFO - New file Detected: F:/programming/auto_organizer/test\download.jpg
 2026-01-21 22:53:29,838 - basicLogger - INFO - F:/programming/auto_organizer/test\download.jpg moved to IMAGES
+2026-01-22 21:17:14,530 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\#18.txt
+2026-01-22 21:17:14,531 - basicLogger - INFO - C:\Users\Andrei\Downloads\#18.txt moved to DOCUMENTS
+2026-01-22 21:17:14,531 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\#45.txt
+2026-01-22 21:17:14,532 - basicLogger - INFO - C:\Users\Andrei\Downloads\#45.txt moved to DOCUMENTS
+2026-01-22 21:17:14,532 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\1392877.jpg
+2026-01-22 21:17:14,532 - basicLogger - INFO - C:\Users\Andrei\Downloads\1392877.jpg moved to IMAGES
+2026-01-22 21:17:14,532 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\1760787011_new_lbYBmGyIiMcg21VX8NGYiRJ4riVC8NLQuDy5YQ9kOcBgv_wSrjs_1L_K5_LbFjhgGq2eIj8iiDFI9mjhJC7dbdLK.jpg
+2026-01-22 21:17:14,533 - basicLogger - INFO - C:\Users\Andrei\Downloads\1760787011_new_lbYBmGyIiMcg21VX8NGYiRJ4riVC8NLQuDy5YQ9kOcBgv_wSrjs_1L_K5_LbFjhgGq2eIj8iiDFI9mjhJC7dbdLK.jpg moved to IMAGES
+2026-01-22 21:17:14,533 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\1syn94ek3x_OLGC_2.1.1.jpg
+2026-01-22 21:17:14,534 - basicLogger - INFO - C:\Users\Andrei\Downloads\1syn94ek3x_OLGC_2.1.1.jpg moved to IMAGES
+2026-01-22 21:17:14,534 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\21d4cea2-73b0-43d8-9049-e59c090ae6f4.pdf
+2026-01-22 21:17:14,534 - basicLogger - INFO - C:\Users\Andrei\Downloads\21d4cea2-73b0-43d8-9049-e59c090ae6f4.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,534 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c (1).pdf
+2026-01-22 21:17:14,534 - basicLogger - INFO - C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c (1).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,535 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c (2).pdf
+2026-01-22 21:17:14,535 - basicLogger - INFO - C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c (2).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,535 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c (3).pdf
+2026-01-22 21:17:14,536 - basicLogger - INFO - C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c (3).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,536 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c.pdf
+2026-01-22 21:17:14,536 - basicLogger - INFO - C:\Users\Andrei\Downloads\40a54f15-eee8-4a7b-82af-8eacc055e20c.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,536 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\7z2501-x64.exe
+2026-01-22 21:17:14,536 - basicLogger - INFO - C:\Users\Andrei\Downloads\7z2501-x64.exe moved to INSTALLERS
+2026-01-22 21:17:14,537 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855-lab-06.pdf
+2026-01-22 21:17:14,537 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855-lab-06.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,537 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855-lab-07.pdf
+2026-01-22 21:17:14,537 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855-lab-07.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,538 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855-lab-08 (1).pdf
+2026-01-22 21:17:14,538 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855-lab-08 (1).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,538 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855-lab-08.pdf
+2026-01-22 21:17:14,538 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855-lab-08.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,539 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855-lab-09.pdf
+2026-01-22 21:17:14,539 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855-lab-09.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,539 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855-lab-10.pdf
+2026-01-22 21:17:14,540 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855-lab-10.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,540 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT3855_Fall2025_Lesson3_PreReading.pdf
+2026-01-22 21:17:14,540 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT3855_Fall2025_Lesson3_PreReading.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,541 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab10 (1).pdf
+2026-01-22 21:17:14,541 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab10 (1).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,541 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab10 (2).pdf
+2026-01-22 21:17:14,541 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab10 (2).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,542 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab10.pdf
+2026-01-22 21:17:14,542 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab10.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,542 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab6 (1).pdf
+2026-01-22 21:17:14,542 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab6 (1).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,543 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab6.pdf
+2026-01-22 21:17:14,543 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab6.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,543 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab7 (1).pdf
+2026-01-22 21:17:14,543 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab7 (1).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,544 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab7 (2).pdf
+2026-01-22 21:17:14,544 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab7 (2).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,544 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab7.pdf
+2026-01-22 21:17:14,544 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab7.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,544 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab8 (1).pdf
+2026-01-22 21:17:14,545 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab8 (1).pdf moved to DOCUMENTS
+2026-01-22 21:17:14,545 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab8.pdf
+2026-01-22 21:17:14,545 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab8.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,545 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab9.pdf
+2026-01-22 21:17:14,546 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Lab9.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,546 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Midterm_Review.pdf
+2026-01-22 21:17:14,546 - basicLogger - INFO - C:\Users\Andrei\Downloads\ACIT4850_Fall2025_Midterm_Review.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,546 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\affine-0.25.1-stable-windows-x64.exe
+2026-01-22 21:17:14,547 - basicLogger - INFO - C:\Users\Andrei\Downloads\affine-0.25.1-stable-windows-x64.exe moved to INSTALLERS
+2026-01-22 21:17:14,547 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\affine.env.example
+2026-01-22 21:17:14,547 - basicLogger - INFO - C:\Users\Andrei\Downloads\affine.env.example moved to MISC
+2026-01-22 21:17:14,547 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\app.zip
+2026-01-22 21:17:14,548 - basicLogger - INFO - C:\Users\Andrei\Downloads\app.zip moved to ZIPS
+2026-01-22 21:17:14,548 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\artifacts.zip
+2026-01-22 21:17:14,549 - basicLogger - INFO - C:\Users\Andrei\Downloads\artifacts.zip moved to ZIPS
+2026-01-22 21:17:14,549 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Calebs notes.zip
+2026-01-22 21:17:14,550 - basicLogger - INFO - C:\Users\Andrei\Downloads\Calebs notes.zip moved to ZIPS
+2026-01-22 21:17:14,550 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\CarLotSample.zip
+2026-01-22 21:17:14,550 - basicLogger - INFO - C:\Users\Andrei\Downloads\CarLotSample.zip moved to ZIPS
+2026-01-22 21:17:14,551 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ch04.pdf
+2026-01-22 21:17:14,551 - basicLogger - INFO - C:\Users\Andrei\Downloads\ch04.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,551 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ChromeSetup.exe
+2026-01-22 21:17:14,551 - basicLogger - INFO - C:\Users\Andrei\Downloads\ChromeSetup.exe moved to INSTALLERS
+2026-01-22 21:17:14,552 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ClickUp Installer.exe
+2026-01-22 21:17:14,552 - basicLogger - INFO - C:\Users\Andrei\Downloads\ClickUp Installer.exe moved to INSTALLERS
+2026-01-22 21:17:14,552 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\ClickUp.exe
+2026-01-22 21:17:14,552 - basicLogger - INFO - C:\Users\Andrei\Downloads\ClickUp.exe moved to INSTALLERS
+2026-01-22 21:17:14,552 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\client_secret_898685951810-achnc4v4nq0lo4blihlu3r7l7m6rdt6t.apps.googleusercontent.com.json
+2026-01-22 21:17:14,553 - basicLogger - INFO - C:\Users\Andrei\Downloads\client_secret_898685951810-achnc4v4nq0lo4blihlu3r7l7m6rdt6t.apps.googleusercontent.com.json moved to SOURCE CODE
+2026-01-22 21:17:14,553 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\CognizantResume.pdf
+2026-01-22 21:17:14,553 - basicLogger - INFO - C:\Users\Andrei\Downloads\CognizantResume.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,554 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Copy of Dangers of (1).zip
+2026-01-22 21:17:14,554 - basicLogger - INFO - C:\Users\Andrei\Downloads\Copy of Dangers of (1).zip moved to ZIPS
+2026-01-22 21:17:14,554 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Copy of Dangers of.zip
+2026-01-22 21:17:14,554 - basicLogger - INFO - C:\Users\Andrei\Downloads\Copy of Dangers of.zip moved to ZIPS
+2026-01-22 21:17:14,554 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\CoverLetter-NetApp.pdf
+2026-01-22 21:17:14,555 - basicLogger - INFO - C:\Users\Andrei\Downloads\CoverLetter-NetApp.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,555 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\CVS.docx
+2026-01-22 21:17:14,555 - basicLogger - INFO - C:\Users\Andrei\Downloads\CVS.docx moved to DOCUMENTS
+2026-01-22 21:17:14,555 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Data Cleaning & Feature Engineering.ipynb
+2026-01-22 21:17:14,556 - basicLogger - INFO - C:\Users\Andrei\Downloads\Data Cleaning & Feature Engineering.ipynb moved to MISC
+2026-01-22 21:17:14,556 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Data_Mining_ALL_CHAPTERS_COMPLETE.docx
+2026-01-22 21:17:14,556 - basicLogger - INFO - C:\Users\Andrei\Downloads\Data_Mining_ALL_CHAPTERS_COMPLETE.docx moved to DOCUMENTS
+2026-01-22 21:17:14,556 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Data_Mining_Complete_Study_Guide.md
+2026-01-22 21:17:14,557 - basicLogger - INFO - C:\Users\Andrei\Downloads\Data_Mining_Complete_Study_Guide.md moved to MISC
+2026-01-22 21:17:14,557 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\deploy.yml
+2026-01-22 21:17:14,557 - basicLogger - INFO - C:\Users\Andrei\Downloads\deploy.yml moved to SOURCE CODE
+2026-01-22 21:17:14,557 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\desktop.ini
+2026-01-22 21:17:14,558 - basicLogger - INFO - C:\Users\Andrei\Downloads\desktop.ini moved to MISC
+2026-01-22 21:17:14,558 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Docker Desktop Installer.exe
+2026-01-22 21:17:14,558 - basicLogger - INFO - C:\Users\Andrei\Downloads\Docker Desktop Installer.exe moved to INSTALLERS
+2026-01-22 21:17:14,558 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\docker-compose (1).yml
+2026-01-22 21:17:14,559 - basicLogger - INFO - C:\Users\Andrei\Downloads\docker-compose (1).yml moved to SOURCE CODE
+2026-01-22 21:17:14,559 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\docker-compose.yml
+2026-01-22 21:17:14,559 - basicLogger - INFO - C:\Users\Andrei\Downloads\docker-compose.yml moved to SOURCE CODE
+2026-01-22 21:17:14,559 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\download (1).jpg
+2026-01-22 21:17:14,560 - basicLogger - INFO - C:\Users\Andrei\Downloads\download (1).jpg moved to IMAGES
+2026-01-22 21:17:14,560 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\download.jpg
+2026-01-22 21:17:14,560 - basicLogger - INFO - C:\Users\Andrei\Downloads\download.jpg moved to IMAGES
+2026-01-22 21:17:14,560 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\drive-download-20251015T044729Z-1-001.zip
+2026-01-22 21:17:14,561 - basicLogger - INFO - C:\Users\Andrei\Downloads\drive-download-20251015T044729Z-1-001.zip moved to ZIPS
+2026-01-22 21:17:14,561 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\e52901c1-74af-4a19-9d33-b4cf62274f99.pdf
+2026-01-22 21:17:14,561 - basicLogger - INFO - C:\Users\Andrei\Downloads\e52901c1-74af-4a19-9d33-b4cf62274f99.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,562 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\env.fixed
+2026-01-22 21:17:14,562 - basicLogger - INFO - C:\Users\Andrei\Downloads\env.fixed moved to MISC
+2026-01-22 21:17:14,562 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\FigmaSetup.exe
+2026-01-22 21:17:14,563 - basicLogger - INFO - C:\Users\Andrei\Downloads\FigmaSetup.exe moved to INSTALLERS
+2026-01-22 21:17:14,563 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\fire_locations.csv
+2026-01-22 21:17:14,563 - basicLogger - INFO - C:\Users\Andrei\Downloads\fire_locations.csv moved to DOCUMENTS
+2026-01-22 21:17:14,563 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Forest_Fire_Load_Test.jmx
+2026-01-22 21:17:14,564 - basicLogger - INFO - C:\Users\Andrei\Downloads\Forest_Fire_Load_Test.jmx moved to MISC
+2026-01-22 21:17:14,564 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\GCC_25.08.04.01.zip
+2026-01-22 21:17:14,565 - basicLogger - INFO - C:\Users\Andrei\Downloads\GCC_25.08.04.01.zip moved to ZIPS
+2026-01-22 21:17:14,565 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\gitlab-ci (1).yml
+2026-01-22 21:17:14,566 - basicLogger - INFO - C:\Users\Andrei\Downloads\gitlab-ci (1).yml moved to SOURCE CODE
+2026-01-22 21:17:14,566 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\gitlab-ci (2).yml
+2026-01-22 21:17:14,566 - basicLogger - INFO - C:\Users\Andrei\Downloads\gitlab-ci (2).yml moved to SOURCE CODE
+2026-01-22 21:17:14,566 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\gitlab-ci (3).yml
+2026-01-22 21:17:14,567 - basicLogger - INFO - C:\Users\Andrei\Downloads\gitlab-ci (3).yml moved to SOURCE CODE
+2026-01-22 21:17:14,567 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\gitlab-ci.yml
+2026-01-22 21:17:14,567 - basicLogger - INFO - C:\Users\Andrei\Downloads\gitlab-ci.yml moved to SOURCE CODE
+2026-01-22 21:17:14,567 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\GoogleDriveSetup (1).exe
+2026-01-22 21:17:14,568 - basicLogger - INFO - C:\Users\Andrei\Downloads\GoogleDriveSetup (1).exe moved to INSTALLERS
+2026-01-22 21:17:14,568 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\GoogleDriveSetup.exe
+2026-01-22 21:17:14,568 - basicLogger - INFO - C:\Users\Andrei\Downloads\GoogleDriveSetup.exe moved to INSTALLERS
+2026-01-22 21:17:14,569 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\googlef81a8561453206b2.html
+2026-01-22 21:17:14,569 - basicLogger - INFO - C:\Users\Andrei\Downloads\googlef81a8561453206b2.html moved to SOURCE CODE
+2026-01-22 21:17:14,569 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Hierarchical_Clustering.ipynb
+2026-01-22 21:17:14,570 - basicLogger - INFO - C:\Users\Andrei\Downloads\Hierarchical_Clustering.ipynb moved to MISC
+2026-01-22 21:17:14,570 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\HousingData.csv
+2026-01-22 21:17:14,570 - basicLogger - INFO - C:\Users\Andrei\Downloads\HousingData.csv moved to DOCUMENTS
+2026-01-22 21:17:14,570 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\HTTP Header Manager.jmx
+2026-01-22 21:17:14,571 - basicLogger - INFO - C:\Users\Andrei\Downloads\HTTP Header Manager.jmx moved to MISC
+2026-01-22 21:17:14,571 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Hyper parameter tunning.ipynb
+2026-01-22 21:17:14,571 - basicLogger - INFO - C:\Users\Andrei\Downloads\Hyper parameter tunning.ipynb moved to MISC
+2026-01-22 21:17:14,571 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\image.jpg
+2026-01-22 21:17:14,572 - basicLogger - INFO - C:\Users\Andrei\Downloads\image.jpg moved to IMAGES
+2026-01-22 21:17:14,572 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\images.jpg
+2026-01-22 21:17:14,572 - basicLogger - INFO - C:\Users\Andrei\Downloads\images.jpg moved to IMAGES
+2026-01-22 21:17:14,573 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\index (1).php
+2026-01-22 21:17:14,573 - basicLogger - INFO - C:\Users\Andrei\Downloads\index (1).php moved to SOURCE CODE
+2026-01-22 21:17:14,573 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\index (2).php
+2026-01-22 21:17:14,574 - basicLogger - INFO - C:\Users\Andrei\Downloads\index (2).php moved to SOURCE CODE
+2026-01-22 21:17:14,574 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\index.html
+2026-01-22 21:17:14,575 - basicLogger - INFO - C:\Users\Andrei\Downloads\index.html moved to SOURCE CODE
+2026-01-22 21:17:14,575 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\index.php
+2026-01-22 21:17:14,575 - basicLogger - INFO - C:\Users\Andrei\Downloads\index.php moved to SOURCE CODE
+2026-01-22 21:17:14,575 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Install VALORANT.exe
+2026-01-22 21:17:14,576 - basicLogger - INFO - C:\Users\Andrei\Downloads\Install VALORANT.exe moved to INSTALLERS
+2026-01-22 21:17:14,576 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Install-Grand Summoners - Anime RPG-GooglePlayGames.exe
+2026-01-22 21:17:14,576 - basicLogger - INFO - C:\Users\Andrei\Downloads\Install-Grand Summoners - Anime RPG-GooglePlayGames.exe moved to INSTALLERS
+2026-01-22 21:17:14,576 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\IT SystemNetwork Provisioning Midterm Review.pdf
+2026-01-22 21:17:14,577 - basicLogger - INFO - C:\Users\Andrei\Downloads\IT SystemNetwork Provisioning Midterm Review.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,577 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\javamavensample-main (1).zip
+2026-01-22 21:17:14,577 - basicLogger - INFO - C:\Users\Andrei\Downloads\javamavensample-main (1).zip moved to ZIPS
+2026-01-22 21:17:14,578 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\javamavensample-main (2).zip
+2026-01-22 21:17:14,578 - basicLogger - INFO - C:\Users\Andrei\Downloads\javamavensample-main (2).zip moved to ZIPS
+2026-01-22 21:17:14,578 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\javamavensample-main.zip
+2026-01-22 21:17:14,578 - basicLogger - INFO - C:\Users\Andrei\Downloads\javamavensample-main.zip moved to ZIPS
+2026-01-22 21:17:14,579 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Jenkinsfile
+2026-01-22 21:17:14,579 - basicLogger - INFO - C:\Users\Andrei\Downloads\Jenkinsfile moved to MISC
+2026-01-22 21:17:14,579 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\JoseOrolaContractTemplate.pdf
+2026-01-22 21:17:14,579 - basicLogger - INFO - C:\Users\Andrei\Downloads\JoseOrolaContractTemplate.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,580 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Kmeans_clustering.ipynb
+2026-01-22 21:17:14,580 - basicLogger - INFO - C:\Users\Andrei\Downloads\Kmeans_clustering.ipynb moved to MISC
+2026-01-22 21:17:14,580 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Lab 1.docx
+2026-01-22 21:17:14,581 - basicLogger - INFO - C:\Users\Andrei\Downloads\Lab 1.docx moved to DOCUMENTS
+2026-01-22 21:17:14,581 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Lab 5.ipynb
+2026-01-22 21:17:14,581 - basicLogger - INFO - C:\Users\Andrei\Downloads\Lab 5.ipynb moved to MISC
+2026-01-22 21:17:14,581 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\lab-11.pdf
+2026-01-22 21:17:14,582 - basicLogger - INFO - C:\Users\Andrei\Downloads\lab-11.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,582 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\lab1.docx
+2026-01-22 21:17:14,582 - basicLogger - INFO - C:\Users\Andrei\Downloads\lab1.docx moved to DOCUMENTS
+2026-01-22 21:17:14,583 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Lab8_report.docx
+2026-01-22 21:17:14,583 - basicLogger - INFO - C:\Users\Andrei\Downloads\Lab8_report.docx moved to DOCUMENTS
+2026-01-22 21:17:14,583 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Labsetup-Firewall.zip
+2026-01-22 21:17:14,584 - basicLogger - INFO - C:\Users\Andrei\Downloads\Labsetup-Firewall.zip moved to ZIPS
+2026-01-22 21:17:14,584 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Labsetup-TLS (1).zip
+2026-01-22 21:17:14,584 - basicLogger - INFO - C:\Users\Andrei\Downloads\Labsetup-TLS (1).zip moved to ZIPS
+2026-01-22 21:17:14,584 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Labsetup-TLS (2).zip
+2026-01-22 21:17:14,585 - basicLogger - INFO - C:\Users\Andrei\Downloads\Labsetup-TLS (2).zip moved to ZIPS
+2026-01-22 21:17:14,585 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Labsetup-TLS.zip
+2026-01-22 21:17:14,585 - basicLogger - INFO - C:\Users\Andrei\Downloads\Labsetup-TLS.zip moved to ZIPS
+2026-01-22 21:17:14,586 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\loan.csv
+2026-01-22 21:17:14,586 - basicLogger - INFO - C:\Users\Andrei\Downloads\loan.csv moved to DOCUMENTS
+2026-01-22 21:17:14,586 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\mb_driver_674_realtek8852wifi_6001.16.172.0.zip.opdownload
+2026-01-22 21:17:14,587 - basicLogger - INFO - C:\Users\Andrei\Downloads\mb_driver_674_realtek8852wifi_6001.16.172.0.zip.opdownload moved to MISC
+2026-01-22 21:17:14,587 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Microsoft Sticky Notes Installer (1).exe
+2026-01-22 21:17:14,587 - basicLogger - INFO - C:\Users\Andrei\Downloads\Microsoft Sticky Notes Installer (1).exe moved to INSTALLERS
+2026-01-22 21:17:14,587 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Microsoft Sticky Notes Installer.exe
+2026-01-22 21:17:14,588 - basicLogger - INFO - C:\Users\Andrei\Downloads\Microsoft Sticky Notes Installer.exe moved to INSTALLERS
+2026-01-22 21:17:14,588 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (1).png
+2026-01-22 21:17:14,588 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (1).png moved to IMAGES
+2026-01-22 21:17:14,589 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (2).png
+2026-01-22 21:17:14,589 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (2).png moved to IMAGES
+2026-01-22 21:17:14,589 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (3).png
+2026-01-22 21:17:14,590 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (3).png moved to IMAGES
+2026-01-22 21:17:14,590 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (4).png
+2026-01-22 21:17:14,590 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (4).png moved to IMAGES
+2026-01-22 21:17:14,590 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (5).png
+2026-01-22 21:17:14,591 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (5).png moved to IMAGES
+2026-01-22 21:17:14,591 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (6).png
+2026-01-22 21:17:14,591 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (6).png moved to IMAGES
+2026-01-22 21:17:14,591 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto (7).png
+2026-01-22 21:17:14,592 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto (7).png moved to IMAGES
+2026-01-22 21:17:14,592 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto.png
+2026-01-22 21:17:14,592 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto.png moved to IMAGES
+2026-01-22 21:17:14,592 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Mokoto.zip
+2026-01-22 21:17:14,592 - basicLogger - INFO - C:\Users\Andrei\Downloads\Mokoto.zip moved to ZIPS
+2026-01-22 21:17:14,593 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\multipass-1.16.1+win-win64.msi
+2026-01-22 21:17:14,593 - basicLogger - INFO - C:\Users\Andrei\Downloads\multipass-1.16.1+win-win64.msi moved to INSTALLERS
+2026-01-22 21:17:14,593 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\mysql-installer-web-community-8.0.44.0.msi
+2026-01-22 21:17:14,594 - basicLogger - INFO - C:\Users\Andrei\Downloads\mysql-installer-web-community-8.0.44.0.msi moved to INSTALLERS
+2026-01-22 21:17:14,594 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Nathan's_Midterm_Questions 2.docx
+2026-01-22 21:17:14,594 - basicLogger - INFO - C:\Users\Andrei\Downloads\Nathan's_Midterm_Questions 2.docx moved to DOCUMENTS
+2026-01-22 21:17:14,594 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Nathan's_Midterm_Questions 2.pdf
+2026-01-22 21:17:14,595 - basicLogger - INFO - C:\Users\Andrei\Downloads\Nathan's_Midterm_Questions 2.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,595 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\new_jenk_keys.pem
+2026-01-22 21:17:14,595 - basicLogger - INFO - C:\Users\Andrei\Downloads\new_jenk_keys.pem moved to SOURCE CODE
+2026-01-22 21:17:14,595 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\node-v22.20.0-x64.msi
+2026-01-22 21:17:14,596 - basicLogger - INFO - C:\Users\Andrei\Downloads\node-v22.20.0-x64.msi moved to INSTALLERS
+2026-01-22 21:17:14,596 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\oh229flg9lxa1.jpg
+2026-01-22 21:17:14,596 - basicLogger - INFO - C:\Users\Andrei\Downloads\oh229flg9lxa1.jpg moved to IMAGES
+2026-01-22 21:17:14,597 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\OneDrive_1_11-17-2025.zip
+2026-01-22 21:17:14,597 - basicLogger - INFO - C:\Users\Andrei\Downloads\OneDrive_1_11-17-2025.zip moved to ZIPS
+2026-01-22 21:17:14,597 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\OneDrive_1_11-3-2025.zip
+2026-01-22 21:17:14,598 - basicLogger - INFO - C:\Users\Andrei\Downloads\OneDrive_1_11-3-2025.zip moved to ZIPS
+2026-01-22 21:17:14,598 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\OneDrive_2_11-3-2025.zip
+2026-01-22 21:17:14,598 - basicLogger - INFO - C:\Users\Andrei\Downloads\OneDrive_2_11-3-2025.zip moved to ZIPS
+2026-01-22 21:17:14,599 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\P1-Deliverable 3.docx
+2026-01-22 21:17:14,599 - basicLogger - INFO - C:\Users\Andrei\Downloads\P1-Deliverable 3.docx moved to DOCUMENTS
+2026-01-22 21:17:14,599 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\P2-Deliverable-1.pdf
+2026-01-22 21:17:14,599 - basicLogger - INFO - C:\Users\Andrei\Downloads\P2-Deliverable-1.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,600 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\P2-Deliverable-2.pdf
+2026-01-22 21:17:14,600 - basicLogger - INFO - C:\Users\Andrei\Downloads\P2-Deliverable-2.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,600 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\parsec-windows.exe
+2026-01-22 21:17:14,601 - basicLogger - INFO - C:\Users\Andrei\Downloads\parsec-windows.exe moved to INSTALLERS
+2026-01-22 21:17:14,601 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\portainer-backup_2025-11-09_07-20-52.tar.gz
+2026-01-22 21:17:14,601 - basicLogger - INFO - C:\Users\Andrei\Downloads\portainer-backup_2025-11-09_07-20-52.tar.gz moved to MISC
+2026-01-22 21:17:14,601 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project Deliverable 2 + 3.ipynb
+2026-01-22 21:17:14,602 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project Deliverable 2 + 3.ipynb moved to MISC
+2026-01-22 21:17:14,602 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project1_DataCleaning_UPDATED.ipynb
+2026-01-22 21:17:14,602 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project1_DataCleaning_UPDATED.ipynb moved to MISC
+2026-01-22 21:17:14,602 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project2_Deliverable1_ML (1) (1).ipynb
+2026-01-22 21:17:14,603 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project2_Deliverable1_ML (1) (1).ipynb moved to MISC
+2026-01-22 21:17:14,603 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project2_Deliverable1_ML (1).ipynb
+2026-01-22 21:17:14,603 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project2_Deliverable1_ML (1).ipynb moved to MISC
+2026-01-22 21:17:14,603 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project2_Deliverable1_ML.ipynb
+2026-01-22 21:17:14,604 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project2_Deliverable1_ML.ipynb moved to MISC
+2026-01-22 21:17:14,604 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project2_Deliverable1_ML_FIXED.ipynb
+2026-01-22 21:17:14,604 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project2_Deliverable1_ML_FIXED.ipynb moved to MISC
+2026-01-22 21:17:14,605 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project2_Deliverable2.ipynb
+2026-01-22 21:17:14,605 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project2_Deliverable2.ipynb moved to MISC
+2026-01-22 21:17:14,605 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project_Deliverable_2_Complete.ipynb
+2026-01-22 21:17:14,605 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project_Deliverable_2_Complete.ipynb moved to MISC
+2026-01-22 21:17:14,605 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Project_Deliverable_2_with_D3.ipynb
+2026-01-22 21:17:14,606 - basicLogger - INFO - C:\Users\Andrei\Downloads\Project_Deliverable_2_with_D3.ipynb moved to MISC
+2026-01-22 21:17:14,606 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\python_build.groovy
+2026-01-22 21:17:14,606 - basicLogger - INFO - C:\Users\Andrei\Downloads\python_build.groovy moved to MISC
+2026-01-22 21:17:14,606 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Rainmeter-4.5.23.exe
+2026-01-22 21:17:14,607 - basicLogger - INFO - C:\Users\Andrei\Downloads\Rainmeter-4.5.23.exe moved to INSTALLERS
+2026-01-22 21:17:14,607 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Reading 10 - Ansible Looping & Error Handling.pdf
+2026-01-22 21:17:14,607 - basicLogger - INFO - C:\Users\Andrei\Downloads\Reading 10 - Ansible Looping & Error Handling.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,608 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\receiver.png
+2026-01-22 21:17:14,608 - basicLogger - INFO - C:\Users\Andrei\Downloads\receiver.png moved to IMAGES
+2026-01-22 21:17:14,608 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster (1).zip
+2026-01-22 21:17:14,608 - basicLogger - INFO - C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster (1).zip moved to ZIPS
+2026-01-22 21:17:14,608 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster (2).zip
+2026-01-22 21:17:14,609 - basicLogger - INFO - C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster (2).zip moved to ZIPS
+2026-01-22 21:17:14,609 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster.mp4
+2026-01-22 21:17:14,609 - basicLogger - INFO - C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster.mp4 moved to VIDEOS
+2026-01-22 21:17:14,609 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster.png
+2026-01-22 21:17:14,610 - basicLogger - INFO - C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster.png moved to IMAGES
+2026-01-22 21:17:14,610 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster.zip
+2026-01-22 21:17:14,611 - basicLogger - INFO - C:\Users\Andrei\Downloads\Red and Pink Ace Card Illustration Lucky Girl Syndrome Poster.zip moved to ZIPS
+2026-01-22 21:17:14,611 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Resume-NetApp.pdf
+2026-01-22 21:17:14,611 - basicLogger - INFO - C:\Users\Andrei\Downloads\Resume-NetApp.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,611 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Rimuru_29_LN.webp
+2026-01-22 21:17:14,612 - basicLogger - INFO - C:\Users\Andrei\Downloads\Rimuru_29_LN.webp moved to IMAGES
+2026-01-22 21:17:14,612 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\SaberInstaller_v1.29.0.exe
+2026-01-22 21:17:14,612 - basicLogger - INFO - C:\Users\Andrei\Downloads\SaberInstaller_v1.29.0.exe moved to INSTALLERS
+2026-01-22 21:17:14,612 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Santander.csv
+2026-01-22 21:17:14,613 - basicLogger - INFO - C:\Users\Andrei\Downloads\Santander.csv moved to DOCUMENTS
+2026-01-22 21:17:14,613 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\sdf.zip
+2026-01-22 21:17:14,613 - basicLogger - INFO - C:\Users\Andrei\Downloads\sdf.zip moved to ZIPS
+2026-01-22 21:17:14,613 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\SonarQube_key.pem
+2026-01-22 21:17:14,614 - basicLogger - INFO - C:\Users\Andrei\Downloads\SonarQube_key.pem moved to SOURCE CODE
+2026-01-22 21:17:14,614 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\SonarQube_key_1028.pem
+2026-01-22 21:17:14,614 - basicLogger - INFO - C:\Users\Andrei\Downloads\SonarQube_key_1028.pem moved to SOURCE CODE
+2026-01-22 21:17:14,614 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\SonarQube_Key_new.pem
+2026-01-22 21:17:14,615 - basicLogger - INFO - C:\Users\Andrei\Downloads\SonarQube_Key_new.pem moved to SOURCE CODE
+2026-01-22 21:17:14,615 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\StackAdapt-Resume.pdf
+2026-01-22 21:17:14,615 - basicLogger - INFO - C:\Users\Andrei\Downloads\StackAdapt-Resume.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,615 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\style.css
+2026-01-22 21:17:14,616 - basicLogger - INFO - C:\Users\Andrei\Downloads\style.css moved to SOURCE CODE
+2026-01-22 21:17:14,616 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Tableau Workbook (1).twb
+2026-01-22 21:17:14,616 - basicLogger - INFO - C:\Users\Andrei\Downloads\Tableau Workbook (1).twb moved to DOCUMENTS
+2026-01-22 21:17:14,616 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Tableau Workbook.twb
+2026-01-22 21:17:14,617 - basicLogger - INFO - C:\Users\Andrei\Downloads\Tableau Workbook.twb moved to DOCUMENTS
+2026-01-22 21:17:14,617 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\TableauPublicDesktop-64bit-2025-2-4.exe
+2026-01-22 21:17:14,617 - basicLogger - INFO - C:\Users\Andrei\Downloads\TableauPublicDesktop-64bit-2025-2-4.exe moved to INSTALLERS
+2026-01-22 21:17:14,618 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\TERM 4-20251207T100315Z-3-001.zip
+2026-01-22 21:17:14,618 - basicLogger - INFO - C:\Users\Andrei\Downloads\TERM 4-20251207T100315Z-3-001.zip moved to ZIPS
+2026-01-22 21:17:14,618 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\titanic.csv
+2026-01-22 21:17:14,619 - basicLogger - INFO - C:\Users\Andrei\Downloads\titanic.csv moved to DOCUMENTS
+2026-01-22 21:17:14,619 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Trello Installer (1).exe
+2026-01-22 21:17:14,619 - basicLogger - INFO - C:\Users\Andrei\Downloads\Trello Installer (1).exe moved to INSTALLERS
+2026-01-22 21:17:14,619 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Trello Installer.exe
+2026-01-22 21:17:14,619 - basicLogger - INFO - C:\Users\Andrei\Downloads\Trello Installer.exe moved to INSTALLERS
+2026-01-22 21:17:14,620 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Untitled document.pdf
+2026-01-22 21:17:14,620 - basicLogger - INFO - C:\Users\Andrei\Downloads\Untitled document.pdf moved to DOCUMENTS
+2026-01-22 21:17:14,620 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\updateStats.js
+2026-01-22 21:17:14,621 - basicLogger - INFO - C:\Users\Andrei\Downloads\updateStats.js moved to SOURCE CODE
+2026-01-22 21:17:14,621 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\VirtualBox-7.2.4-170995-Win.exe
+2026-01-22 21:17:14,621 - basicLogger - INFO - C:\Users\Andrei\Downloads\VirtualBox-7.2.4-170995-Win.exe moved to INSTALLERS
+2026-01-22 21:17:14,621 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\VSCodeUserSetup-x64-1.107.1.exe
+2026-01-22 21:17:14,622 - basicLogger - INFO - C:\Users\Andrei\Downloads\VSCodeUserSetup-x64-1.107.1.exe moved to INSTALLERS
+2026-01-22 21:17:14,622 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\week-10.md
+2026-01-22 21:17:14,622 - basicLogger - INFO - C:\Users\Andrei\Downloads\week-10.md moved to MISC
+2026-01-22 21:17:14,622 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\week-11.md
+2026-01-22 21:17:14,623 - basicLogger - INFO - C:\Users\Andrei\Downloads\week-11.md moved to MISC
+2026-01-22 21:17:14,623 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Xbox Accessories Installer.exe
+2026-01-22 21:17:14,623 - basicLogger - INFO - C:\Users\Andrei\Downloads\Xbox Accessories Installer.exe moved to INSTALLERS
+2026-01-22 21:17:14,623 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (1).png
+2026-01-22 21:17:14,624 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (1).png moved to IMAGES
+2026-01-22 21:17:14,624 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (10).png
+2026-01-22 21:17:14,624 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (10).png moved to IMAGES
+2026-01-22 21:17:14,624 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (2).png
+2026-01-22 21:17:14,625 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (2).png moved to IMAGES
+2026-01-22 21:17:14,625 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (3).png
+2026-01-22 21:17:14,625 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (3).png moved to IMAGES
+2026-01-22 21:17:14,625 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (4).png
+2026-01-22 21:17:14,626 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (4).png moved to IMAGES
+2026-01-22 21:17:14,626 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (5).png
+2026-01-22 21:17:14,626 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (5).png moved to IMAGES
+2026-01-22 21:17:14,626 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (6).png
+2026-01-22 21:17:14,627 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (6).png moved to IMAGES
+2026-01-22 21:17:14,627 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (7).png
+2026-01-22 21:17:14,627 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (7).png moved to IMAGES
+2026-01-22 21:17:14,627 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (8).png
+2026-01-22 21:17:14,627 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (8).png moved to IMAGES
+2026-01-22 21:17:14,628 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text (9).png
+2026-01-22 21:17:14,628 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text (9).png moved to IMAGES
+2026-01-22 21:17:14,628 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text.png
+2026-01-22 21:17:14,628 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text.png moved to IMAGES
+2026-01-22 21:17:14,628 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\Your paragraph text.zip
+2026-01-22 21:17:14,629 - basicLogger - INFO - C:\Users\Andrei\Downloads\Your paragraph text.zip moved to ZIPS
+2026-01-22 22:31:43,327 - basicLogger - INFO - New file Detected: C:\Users\Andrei\Downloads\file-sample_150kB.pdf
+2026-01-22 22:31:43,327 - basicLogger - INFO - C:\Users\Andrei\Downloads\file-sample_150kB.pdf moved to DOCUMENTS
