@@ -46,37 +46,59 @@ class NewFileHandler(FileSystemEventHandler):
 
             # moves the file to PICTURE directory
             if extension.lower().endswith(("jpg", "jpeg", "png", "gif", "webp", "tiff", "tif","svg", "bmp", "ico", "heic", "avif", "raw")):
-                shutil.move(event.src_path, PICT_DIR)
-                logger.info(f"{event.src_path} moved to IMAGES")
-            
+                try: 
+                    shutil.move(event.src_path, PICT_DIR)
+                    logger.info(f"{event.src_path} moved to IMAGES")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {PICT_DIR}")
+
             # moves the file to INSTALLER directory 
             elif extension.lower().endswith(("exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
-                shutil.move(event.src_path, INST_DIR)
-                logger.info(f"{event.src_path} moved to INSTALLERS")
+                try: 
+                    shutil.move(event.src_path, INST_DIR)
+                    logger.info(f"{event.src_path} moved to INSTALLERS")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {INST_DIR}")
 
             # Moves all ZIP files to the ZIP folder 
             elif extension.lower().endswith(('.zip')):
-                shutil.move(event.src_path, ZIPS_DIR)
-                logger.info(f"{event.src_path} moved to ZIPS")
-                
+                try: 
+                    shutil.move(event.src_path, ZIPS_DIR)
+                    logger.info(f"{event.src_path} moved to ZIPS")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {ZIPS_DIR}")
             # Moves all files to the DOCUMENTS folder
             elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers","twb")):
-                shutil.move(event.src_path, DOCT_DIR)
-                logger.info(f"{event.src_path} moved to DOCUMENTS")
+                try: 
+                    shutil.move(event.src_path, DOCT_DIR)
+                    logger.info(f"{event.src_path} moved to DOCUMENTS")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {DOCT_DIR}")
+                
 
             # Moves all code thingies into a thing
             elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json","pem", "pub")):
-                shutil.move(event.src_path, SRCD_DIR)
-                logger.info(f"{event.src_path} moved to SOURCE CODE")
+                try:
+                    shutil.move(event.src_path, SRCD_DIR)
+                    logger.info(f"{event.src_path} moved to SOURCE CODE")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {SRCD_DIR}")
 
             # Moves all files into a VIDEO directory
             elif extension.lower().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv')):
-                shutil.move(event.src_path, VIDE_DIR)                
-                logger.info(f"{event.src_path} moved to VIDEOS")
+                try: 
+                    shutil.move(event.src_path, VIDE_DIR)                
+                    logger.info(f"{event.src_path} moved to VIDEOS")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {VIDE_DIR}")
 
+            # Moves the files into the MISC folder 
             else:
-                shutil.move(event.src_path, MISC_DIR)
-                logger.info(f"{event.src_path} moved to MISC")
+                try: 
+                    shutil.move(event.src_path, MISC_DIR)
+                    logger.info(f"{event.src_path} moved to MISC")
+                except: 
+                    logger.error(f"Could not move {event.src_path} to {MISC_DIR}")
                 
 
 
