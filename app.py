@@ -41,53 +41,40 @@ class NewFileHandler(FileSystemEventHandler):
     # This function runs whenever a file or folder is created
     def on_created(self, event):
         if not event.is_directory:
-            # print(f"BINGO! New file detected: {event.src_path}") 
             logger.info(f"New file Detected: {event.src_path}")
-            # Just like the thing, we need to break the file apart
             root, extension = os.path.splitext(event.src_path)
-            print(extension)
+
+            # moves the file to PICTURE directory
             if extension.lower().endswith(("jpg", "jpeg", "png", "gif", "webp", "tiff", "tif","svg", "bmp", "ico", "heic", "avif", "raw")):
-                # print(f"Appending item to IMAGES")
-                # images.append(event.src_path)
                 shutil.move(event.src_path, PICT_DIR)
                 logger.info(f"{event.src_path} moved to IMAGES")
-
-            #Appends item to installers - organizes and places in the installers directory 
+            
+            # moves the file to INSTALLER directory 
             elif extension.lower().endswith(("exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
-                # print(f"Appending item to INSTALLERS: {event.src_path}")
-                # installers.append(event.src_path)
                 shutil.move(event.src_path, INST_DIR)
                 logger.info(f"{event.src_path} moved to INSTALLERS")
 
-            #Appends items to the ZIPS array - organizes and places it if it is a ZIP file. Luckily the name isn't too huge
+            # Moves all ZIP files to the ZIP folder 
             elif extension.lower().endswith(('.zip')):
-                # print(f"Appending item to ZIPS: {event.src_path}")
-                # zips.append(event.src_path)
                 shutil.move(event.src_path, ZIPS_DIR)
                 logger.info(f"{event.src_path} moved to ZIPS")
                 
-            #Appends items if they are classified as a document file. 
+            # Moves all files to the DOCUMENTS folder
             elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers","twb")):
-                # print(f"Appending item to Documents: {event.src_path}")
-                # documents.append(event.src_path)
                 shutil.move(event.src_path, DOCT_DIR)
                 logger.info(f"{event.src_path} moved to DOCUMENTS")
 
-            
-            #Appends items to Source Code if they are categorized as a "Source Code" file
+            # Moves all code thingies into a thing
             elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json","pem", "pub")):
-                # print(f"Appending item to source_code: {event.src_path}")
-                # documents.append(event.src_path)
                 shutil.move(event.src_path, SRCD_DIR)
                 logger.info(f"{event.src_path} moved to SOURCE CODE")
 
-
+            # Moves all files into a VIDEO directory
             elif extension.lower().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv')):
                 shutil.move(event.src_path, VIDE_DIR)                
                 logger.info(f"{event.src_path} moved to VIDEOS")
+
             else:
-                # print(f"This is a common image format. file: {item}")
-                # misc.append(event.src_path)
                 shutil.move(event.src_path, MISC_DIR)
                 logger.info(f"{event.src_path} moved to MISC")
                 
@@ -96,14 +83,10 @@ class NewFileHandler(FileSystemEventHandler):
 
 def initial_sweep(watch_path, handler_instance):
     print("Performing initial sweep of the folder...")
-    # List everything in the directory
     for filename in os.listdir(watch_path):
         file_path = os.path.join(watch_path, filename)
         
-        # We only want to move files, and we must ignore the organized folders
         if os.path.isfile(file_path):
-            # We manually trigger the on_created logic
-            # We create a fake "event" object that watchdog expects
             class MockEvent:
                 def __init__(self, src_path):
                     self.src_path = src_path
