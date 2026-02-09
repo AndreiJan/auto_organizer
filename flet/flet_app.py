@@ -2,19 +2,21 @@ import flet as ft
 import os
 from tkinter import filedialog
 import tkinter as tk
+import platform 
 
 
 
-
+home_dir = os.path.expanduser("~")
+downloads_path = os.path.join(home_dir, "Downloads")
 def main(page: ft.Page):
-    document_path = ft.Text(value="No folder selected")
-    videos_path = ft.Text(value="No folder selected")
-    installers_path = ft.Text(value="No folder selected")
-    pictures_path = ft.Text(value="No folder selected")
-    miscs_path = ft.Text(value="No folder selected")
-    source_code_path = ft.Text(value="No folder selected")
-    miscs_path = ft.Text(value="No folder selected")
-    zips_path = ft.Text(value="No folder selected")
+    document_path = ft.Text(value=downloads_path)
+    videos_path = ft.Text(value=downloads_path)
+    installers_path = ft.Text(value=downloads_path)
+    pictures_path = ft.Text(value=downloads_path)
+    miscs_path = ft.Text(value=downloads_path)
+    source_code_path = ft.Text(value=downloads_path)
+    miscs_path = ft.Text(value=downloads_path)
+    zips_path = ft.Text(value=downloads_path)
 
     def document_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
         # Positions the text
@@ -108,39 +110,54 @@ def main(page: ft.Page):
         ft.Text("FILE ORGANIZER", size=24, weight=ft.FontWeight.W_600),
         ft.Column([
             # Document
-            ft.Text("Document Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=document_folder),
-            document_path,
-            
+            ft.Text("Document Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=document_folder),
+                document_path,
+            ]),           
             # Video
-            ft.Text("Video Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=videos_folder),
-            videos_path,
+            ft.Text("Video Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=videos_folder),
+                videos_path,
+            ]),
 
             # Installer
-            ft.Text("Installer Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=installers_folder),
-            installers_path,
+            ft.Text("Installer Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=installers_folder),
+                installers_path,
+            ]),
             
             # Pictures
-            ft.Text("Pictures Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=pictures_folder),
-            pictures_path,
+            ft.Text("Pictures Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=pictures_folder),
+                pictures_path,
+            ]),
             
             # Misc
-            ft.Text("Misc Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=miscs_folder),
-            miscs_path,
+            ft.Text("Misc Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=miscs_folder),
+                miscs_path,
+            ]),
             
             # Source Code
-            ft.Text("Source Code Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=source_code_folder),
-            source_code_path,
+            ft.Text("Source Code Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=source_code_folder),
+                source_code_path,
+            ]), 
             
             # Zip File
-            ft.Text("Zip Files", size=24, weight=ft.FontWeight.W_200),
-            ft.Button("Select", on_click=zips_folder),
-            zips_path,
+            ft.Text("Zip Files", size=24, weight=ft.FontWeight.W_100),
+            ft.Row([
+                ft.Button("Select", on_click=zips_folder),
+                zips_path,
+            ]),
+
+
         ])
     )
 
