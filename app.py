@@ -47,6 +47,10 @@ class NewFileHandler(FileSystemEventHandler):
             # moves the file to PICTURE directory
             if extension.lower().endswith(("jpg", "jpeg", "png", "gif", "webp", "tiff", "tif","svg", "bmp", "ico", "heic", "avif", "raw")):
                 try: 
+                    # Removes the file if it already exists
+                    if os.path.exists(PICT_DIR, event.src_path):
+                        os.remove(PICT_DIR, event.src_path)
+                     #It will remove the old one, but keep the same one. Removes redundancy and keeps the latest "document"
                     shutil.move(event.src_path, PICT_DIR)
                     logger.info(f"{event.src_path} moved to IMAGES")
                 except: 
@@ -55,6 +59,8 @@ class NewFileHandler(FileSystemEventHandler):
             # moves the file to INSTALLER directory 
             elif extension.lower().endswith(("exe", "msi", "msu", "msp", "appx","dmg", "pkg","apk", "ipa","deb", "rpm", "sh", "run")):
                 try: 
+                    if os.path.exists(INST_DIR, event.src_path):
+                        os.remove(INST_DIR, event.src_path)
                     shutil.move(event.src_path, INST_DIR)
                     logger.info(f"{event.src_path} moved to INSTALLERS")
                 except: 
@@ -63,22 +69,28 @@ class NewFileHandler(FileSystemEventHandler):
             # Moves all ZIP files to the ZIP folder 
             elif extension.lower().endswith(('.zip')):
                 try: 
+                    if os.path.exists(ZIPS_DIR, event.src_path):
+                        os.remove(ZIPS_DIR, event.src_path)
                     shutil.move(event.src_path, ZIPS_DIR)
                     logger.info(f"{event.src_path} moved to ZIPS")
                 except: 
                     logger.error(f"Could not move {event.src_path} to {ZIPS_DIR}")
+                    
             # Moves all files to the DOCUMENTS folder
             elif extension.lower().endswith(("doc", "docx", "pdf", "txt", "rtf","odt", "xls", "xlsx", "ppt", "pptx", "csv", "pages", "key", "numbers","twb")):
-                try: 
+                try:
+                    if os.path.exists(DOCT_DIR, event.src_path):
+                        os.remove(DOCT_DIR, event.src_path)
                     shutil.move(event.src_path, DOCT_DIR)
                     logger.info(f"{event.src_path} moved to DOCUMENTS")
                 except: 
                     logger.error(f"Could not move {event.src_path} to {DOCT_DIR}")
-                
 
             # Moves all code thingies into a thing
             elif extension.lower().endswith(("py", "js", "ts", "c", "cpp", "h", "cs", "java", "rb", "php", "go", "rs", "swift", "kt", "html", "css", "sql", "sh", "bat", "yml", "json","pem", "pub")):
                 try:
+                    if os.path.exists(SRCD_DIR, event.src_path):
+                        os.remove(SRCD_DIR, event.src_path)
                     shutil.move(event.src_path, SRCD_DIR)
                     logger.info(f"{event.src_path} moved to SOURCE CODE")
                 except: 
@@ -86,7 +98,9 @@ class NewFileHandler(FileSystemEventHandler):
 
             # Moves all files into a VIDEO directory
             elif extension.lower().endswith(('.mp4', '.mov', '.mkv', '.avi', '.wmi', '.flv')):
-                try: 
+                try:
+                    if os.path.exists(VIDE_DIR, event.src_path):
+                        os.remove(VIDE_DIR, event.src_path)
                     shutil.move(event.src_path, VIDE_DIR)                
                     logger.info(f"{event.src_path} moved to VIDEOS")
                 except: 
@@ -94,7 +108,9 @@ class NewFileHandler(FileSystemEventHandler):
 
             # Moves the files into the MISC folder 
             else:
-                try: 
+                try:
+                    if os.path.exists(MISC_DIR, event.src_path):
+                        os.remove(MISC_DIR, event.src_path)
                     shutil.move(event.src_path, MISC_DIR)
                     logger.info(f"{event.src_path} moved to MISC")
                 except: 
