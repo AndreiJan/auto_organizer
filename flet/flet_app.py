@@ -2,218 +2,111 @@ import flet as ft
 import os
 from tkinter import filedialog
 import tkinter as tk
-import platform 
 import json
 
 
-# JSON file 
-# Reads JSON file 
-# Contains FOLDERS and more 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+json_path = os.path.join(script_dir, 'data.json')
 
-with open('./data/data.json', 'r') as f:
-    data = json.load(f)
-    print(data)
-
+def load_data():
+    with open(json_path, 'r') as f:
+        return json.load(f)
 
 home_dir = os.path.expanduser("~")
 downloads_path = os.path.join(home_dir, "Downloads")
+
 def main(page: ft.Page):
-    # document_path = ft.Text(value=downloads_path)
-    # videos_path = ft.Text(value=downloads_path)
-    # installers_path = ft.Text(value=downloads_path)
-    # pictures_path = ft.Text(value=downloads_path)
-    # miscs_path = ft.Text(value=downloads_path)
-    # source_code_path = ft.Text(value=downloads_path)
-    # miscs_path = ft.Text(value=downloads_path)
-    # zips_path = ft.Text(value=downloads_path)
+    def main_page():
 
-    # def document_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         document_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         document_path.value = "Selection cancelled"
-    #     page.update()
+        data = load_data()  # Load fresh inside main every time app starts
 
-    # def videos_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         videos_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         videos_path.value = "Selection cancelled"
-    #     page.update()
+        # Build state dynamically from JSON - one ft.Text per category
+        path_states = {}
+        for category in data:
+            name = category["name"]
+            saved_dir = category.get("directory", downloads_path)
+            path_states[name] = ft.Text(value=saved_dir)
+            print(f"[LOAD] {name} -> {saved_dir}")
 
+        def save_to_json():
+            for category in data:
+                name = category["name"]
+                new_dir = path_states[name].value
+                print(f"[SAVE] {name} -> {new_dir}")
+                category["directory"] = new_dir
+            with open(json_path, 'w') as f:
+                json.dump(data, f, indent=4)
+            print(f"[SAVE] Written to {json_path}")
 
-    # def installers_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         installers_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         installers_path.value = "Selection cancelled"
-    #     page.update()
-    # def pictures_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         pictures_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         pictures_path.value = "Selection cancelled"
-    #     page.update()
-    # def miscs_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         miscs_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         miscs_path.value = "Selection cancelled"
-    #     page.update()
-    # def source_code_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         source_code_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         source_code_path.value = "Selection cancelled"
-    #     page.update()
-    
-    # def zips_folder(e): # Selects the specified Folder for Documents - if not selected - defaults to Downloads 
-    #     # Positions the text
-    #     root = tk.Tk()
-    #     root.withdraw()
-    #     root.wm_attributes('-topmost', 1)
-    #     folder = filedialog.askdirectory()
-    #     if folder:
-    #         zips_path.value = f"Selected: {folder}"
-    #         print(f"Selected: {folder}")
-    #     else:
-    #         zips_path.value = "Selection cancelled"
-    #     page.update()
-    # page.add(
-    #     ft.Text("FILE ORGANIZER", size=24, weight=ft.FontWeight.W_600),
-    #     ft.Column([
-    #         # Document
-    #         ft.Text("Document Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=document_folder),
-    #             document_path,
-    #         ]),           
-    #         # Video
-    #         ft.Text("Video Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=videos_folder),
-    #             videos_path,
-    #         ]),
+        def make_folder_picker(category_name):
+            def pick_folder(e):
+                root = tk.Tk()
+                root.withdraw()
+                root.wm_attributes('-topmost', 1)
+                folder = filedialog.askdirectory()
+                print(f"[PICK] folder dialog returned: '{folder}'")
+                if folder:
+                    path_states[category_name].value = folder
+                    print(f"[PICK] Set {category_name} -> {folder}")
+                    save_to_json()
+                page.update()
+            return pick_folder
+        
+        def delete_folder(category_name):
+            def on_delete(e):
+                nonlocal data
+                data = [item for item in data if item['name'] != category_name]
+                if category_name in path_states:
+                    del path_states[category_name]
+                with open(json_path, 'w') as f:
+                    json.dump(data, f, indent=4)
+                print(f"[DELETE] Removed {category_name}")
+                rebuild_ui()
+                
+            return on_delete
+        
 
-    #         # Installer
-    #         ft.Text("Installer Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=installers_folder),
-    #             installers_path,
-    #         ]),
+        def rebuild_ui():
+            """Rebuild the entire UI with current data"""
+            page.clean()
             
-    #         # Pictures
-    #         ft.Text("Pictures Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=pictures_folder),
-    #             pictures_path,
-    #         ]),
-            
-    #         # Misc
-    #         ft.Text("Misc Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=miscs_folder),
-    #             miscs_path,
-    #         ]),
-            
-    #         # Source Code
-    #         ft.Text("Source Code Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=source_code_folder),
-    #             source_code_path,
-    #         ]), 
-            
-    #         # Zip File
-    #         ft.Text("Zip Files", size=24, weight=ft.FontWeight.W_100),
-    #         ft.Row([
-    #             ft.Button("Select", on_click=zips_folder),
-    #             zips_path,
-    #         ]),
+            rows = []
+            for category in data:
+                name = category["name"]
+                extensions = category.get("extensions", [])
+                ext_preview = ", ".join(f".{e}" for e in extensions[:6])
+                if len(extensions) > 6:
+                    ext_preview += f"  (+{len(extensions) - 6} more)"
 
+                rows.append(
+                    ft.Column([
+                        ft.Text(f"{name} Files", size=20, weight=ft.FontWeight.W_500),
+                        ft.Text(ext_preview, size=11, color=ft.Colors.GREY_500, italic=True),
+                        ft.Row([
+                            ft.ElevatedButton("Select Folder", on_click=make_folder_picker(name)),
+                            path_states[name],
+                            ft.ElevatedButton("Delete Folder", on_click=delete_folder(name), color=ft.Colors.RED_400)
+                        ]),
+                        ft.Divider(height=8, color=ft.Colors.TRANSPARENT),
+                    ])
+                )
 
-    #     ])
-    # )
+            page.add(
+                ft.Text("FILE ORGANIZER", size=24, weight=ft.FontWeight.W_600),
 
-    #  =====================================================
-    path_states = {}
-    for category in data:
-        name = category["name"]
-        saved_dir = category.get("directory", downloads_path)
-        path_states[name] = ft.Text(value=saved_dir)
-
-    def make_folder_picker(category_name):
-        def pick_folder(e):
-            root = tk.Tk()
-            root.withdraw()
-            root.wm_attributes('-topmost', 1)
-            folder = filedialog.askdirectory()
-            if folder:
-                path_states[category_name].value = folder
-            else:
-                path_states[category_name].value = path_states[category_name].value  # keep existing
+                ft.ElevatedButton("Go to Page 2", on_click=lambda e: new_folder()),
+                ft.Divider(),
+                ft.Column(rows, scroll=ft.ScrollMode.AUTO, expand=True),
+            )
             page.update()
-        return pick_folder
+        rebuild_ui()
 
-    # Build UI rows dynamically
-    rows = []
-    for category in data:
-        name = category["name"]
-        extensions = category.get("extensions", [])
-        ext_preview = ", ".join(f".{e}" for e in extensions[:6])
-        if len(extensions) > 6:
-            ext_preview += f"  (+{len(extensions) - 6} more)"
-
-        rows.append(
-            ft.Column([
-                ft.Text(f"{name} Files", size=20, weight=ft.FontWeight.W_500),
-                ft.Text(ext_preview, size=11, color=ft.Colors.GREY_500, italic=True),
-                ft.Row([
-                    ft.ElevatedButton("Select Folder", on_click=make_folder_picker(name)),
-                    path_states[name],
-                ]),
-                ft.Divider(height=8, color=ft.Colors.TRANSPARENT),
-            ])
+    def new_folder():
+        page.clean()  # Clear everything on the page
+        page.add(
+            ft.Text("This is Page 2", size=30),
+            ft.ElevatedButton("Go back to Page 1", on_click=lambda e: main_page())
         )
-
-    page.add(
-        ft.Text("FILE ORGANIZER", size=24, weight=ft.FontWeight.W_600),
-        ft.Divider(),
-        ft.Column(rows, scroll=ft.ScrollMode.AUTO, expand=True),
-    )
-ft.run(main)
+        page.update()
+    main_page()
+ft.app(target=main)

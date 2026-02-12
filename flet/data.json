@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Pictures",
+        "directory": "C:/Users/Andrei/OneDrive/Pictures",
+        "extensions": [
+            "jpg",
+            "jpeg",
+            "png",
+            "gif",
+            "webp",
+            "tiff",
+            "tif",
+            "svg",
+            "bmp",
+            "ico",
+            "heic",
+            "avif",
+            "raw"
+        ]
+    }
+]
