@@ -102,10 +102,56 @@ def main(page: ft.Page):
         rebuild_ui()
 
     def new_folder():
+
+        folder_name = ft.TextField(label="Enter your name", hint_text="Type something...")
+        # folder_path = 
+        # folder_extension = 
+        selected_folder_path = ""
+        path_display = ft.Text("No folder selected")
+
+
+
+        def pick_and_save_folder(e):
+            nonlocal selected_folder_path
+            
+            # Open folder picker dialog
+            root = tk.Tk()
+            root.withdraw()  # Hide the main tkinter window
+            root.wm_attributes('-topmost', 1)  # Keep dialog on top
+            
+            folder = filedialog.askdirectory(title="Select a folder")
+            
+            if folder:  # If user selected a folder (didn't cancel)
+                selected_folder_path = folder  # Save the path
+                path_display.value = f"Selected: {selected_folder_path}"
+                print(f"Folder saved: {selected_folder_path}")
+            else:
+                path_display.value = "No folder selected"
+            
+            page.update()
+        def save_date(category_name):
+            # Get the value from the text field
+            entered_text = folder_name.value
+            # folder_name.value = f"You entered: {entered_text}"
+            print(entered_text)# This has detected the name. Now we can go ahead and set the "folder" we can create it and set it from the file above.
+            print(selected_folder_path)
+            page.update()
+
+
+
+
+
+
         page.clean()  # Clear everything on the page
         page.add(
             ft.Text("This is Page 2", size=30),
-            ft.ElevatedButton("Go back to Page 1", on_click=lambda e: main_page())
+            ft.ElevatedButton("Go back to Page 1", on_click=lambda e: main_page()),
+
+            folder_name,
+            ft.ElevatedButton("Select Folder", on_click=pick_and_save_folder),
+            path_display,
+            ft.Button("Enter", on_click=save_date)
+
         )
         page.update()
     main_page()
