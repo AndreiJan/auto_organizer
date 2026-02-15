@@ -7,7 +7,6 @@ import json
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 json_path = os.path.join(script_dir, 'data.json')
-
 def load_data():
     with open(json_path, 'r') as f:
         return json.load(f)
@@ -18,9 +17,8 @@ downloads_path = os.path.join(home_dir, "Downloads")
 def main(page: ft.Page):
     def main_page():
 
-        data = load_data()  # Load fresh inside main every time app starts
+        data = load_data()  
 
-        # Build state dynamically from JSON - one ft.Text per category
         path_states = {}
         for category in data:
             name = category["name"]
@@ -102,56 +100,75 @@ def main(page: ft.Page):
         rebuild_ui()
 
     def new_folder():
-
+        data = load_data()
         folder_name = ft.TextField(label="Enter your name", hint_text="Type something...")
         # folder_path = 
         # folder_extension = 
         selected_folder_path = ""
         path_display = ft.Text("No folder selected")
+        all_extensions = [
+        "jpg", "jpeg", "png", "gif", "bmp", "svg", "webp",
+        "pdf", "doc", "docx", "txt", "rtf", "odt",
+        "mp4", "avi", "mkv", "mov", "wmv", "flv",
+        "mp3", "wav", "flac", "aac", "ogg",
+        "zip", "rar", "7z", "tar", "gz",
+        "exe", "msi", "dmg", "apk",
+        "py", "js", "html", "css", "java", "cpp", "c",
+        "xls", "xlsx", "csv", "ppt", "pptx"
+        ]
+    
+    # Track selected extensions
 
+
+        already_used = set()
+        for category in data:
+            already_used.update(category.get("extensions", []))
+        selected_extensions = {}
+        checkboxes = []
+
+        for ext in all_extensions:
+            is_used = ext in already_used
+            cb = ft.Checkbox(label=f".{ext}", value=is_used)
+            selected_extensions[ext] = cb
+            checkboxes.append(cb)
 
 
         def pick_and_save_folder(e):
             nonlocal selected_folder_path
-            
-            # Open folder picker dialog
             root = tk.Tk()
             root.withdraw()  # Hide the main tkinter window
             root.wm_attributes('-topmost', 1)  # Keep dialog on top
-            
             folder = filedialog.askdirectory(title="Select a folder")
-            
             if folder:  # If user selected a folder (didn't cancel)
                 selected_folder_path = folder  # Save the path
                 path_display.value = f"Selected: {selected_folder_path}"
                 print(f"Folder saved: {selected_folder_path}")
             else:
                 path_display.value = "No folder selected"
-            
             page.update()
-        def save_date(category_name):
-            # Get the value from the text field
+
+        def save_data(category_name):
             entered_text = folder_name.value
-            # folder_name.value = f"You entered: {entered_text}"
-            print(entered_text)# This has detected the name. Now we can go ahead and set the "folder" we can create it and set it from the file above.
+            print(entered_text)
             print(selected_folder_path)
+            print(f"Extensions: {selected_extensions}")
             page.update()
-
-
-
-# test
-
-
-        page.clean()  # Clear everything on the page
+        
+        page.clean()
         page.add(
-            ft.Text("This is Page 2", size=30),
+            ft.Text("Add New Folder Category", size=30),
             ft.ElevatedButton("Go back to Page 1", on_click=lambda e: main_page()),
-
             folder_name,
             ft.ElevatedButton("Select Folder", on_click=pick_and_save_folder),
             path_display,
-            ft.Button("Enter", on_click=save_date)
-
+            ft.Divider(),
+            ft.Text("Select file extensions:", size=16, weight=ft.FontWeight.W_500),
+            ft.Column(
+                [ft.Row(checkboxes[i:i+5]) for i in range(0, len(checkboxes), 5)],
+                scroll=ft.ScrollMode.AUTO,
+                height=300
+            ),
+            ft.Button("Save", on_click=save_data)
         )
         page.update()
     main_page()
